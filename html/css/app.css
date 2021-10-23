@@ -1,0 +1,264 @@
+@font-face {
+    font-family: 'RDR Gothica';
+    src: url('../fonts/RDR/RDRGothica-Regular.eot');
+    src: url('../fonts/RDR/RDRGothica-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RDR/RDRGothica-Regular.woff2') format('woff2'),
+        url('../fonts/RDR/RDRGothica-Regular.woff') format('woff'),
+        url('../fonts/RDR/RDRGothica-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RDR Catalogue';
+    src: url('../fonts/RDR/RDRCatalogueBold-Bold.eot');
+    src: url('../fonts/RDR/RDRCatalogueBold-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RDR/RDRCatalogueBold-Bold.woff2') format('woff2'),
+        url('../fonts/RDR/RDRCatalogueBold-Bold.woff') format('woff'),
+        url('../fonts/RDR/RDRCatalogueBold-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RDR Lino';
+    src: url('../fonts/RDR/RDRLino-Regular.eot');
+    src: url('../fonts/RDR/RDRLino-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RDR/RDRLino-Regular.woff2') format('woff2'),
+        url('../fonts/RDR/RDRLino-Regular.woff') format('woff'),
+        url('../fonts/RDR/RDRLino-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Hapna Slab Serif';
+    src: url('../fonts/RDR/HapnaSlabSerif-DemiBold.eot');
+    src: url('../fonts/RDR/HapnaSlabSerif-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RDR/HapnaSlabSerif-DemiBold.woff2') format('woff2'),
+        url('../fonts/RDR/HapnaSlabSerif-DemiBold.woff') format('woff'),
+        url('../fonts/RDR/HapnaSlabSerif-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Redemption';
+    src: url('../fonts/RDR/Redemption.eot');
+    src: url('../fonts/RDR/Redemption.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RDR/Redemption.woff2') format('woff2'),
+        url('../fonts/RDR/Redemption.woff') format('woff'),
+        url('../fonts/RDR/Redemption.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#controls {
+	font-family: 'Redemption';
+	font-size: 3em;
+	color: #FFF;
+	position: absolute;
+	bottom: 40;
+	right: 40;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.controls {
+	display: none;
+}
+
+.dialog {
+	font-family: 'Redemption';
+	background-color: transparent;
+	color: #fff;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	width: 600px;
+	height: 10em;
+	transform: translate(-50%, -50%);
+	padding-bottom: 3.5em;
+}
+
+.dialog_bg {
+	background-color: transparent;
+	background-image: url('../img/menu_bg.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	filter: brightness(0.0) sepia(0) saturate(0%);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	z-index: -2;
+	opacity: 0.85;
+}
+
+.dialog.big {
+	height: 200px;
+}
+
+.dialog .head {
+	background-color: transparent;
+	text-align: center;
+	height: 3em;
+	line-height: 3em;
+	font-size: 1.5em;
+}
+
+.dialog .head_bg {
+	background-color: transparent;
+	background-image: url('../img/menu_bg.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	filter: brightness(0.5) sepia(1) saturate(10000%);
+	width: 100%;
+	height: 100%;
+	max-height: 3em;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+
+.dialog .head span:before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.dialog .dialog-container {
+	max-width: 500px;
+	margin-left: 50px;
+}
+
+.dialog input {
+	font-family: 'Hapna Slab Serif';
+}
+
+.dialog input[type="text"] {
+	font-family: 'Hapna Slab Serif' !important;
+	width: 100%;
+	max-width: 475px;
+	height: 2.5em;
+	font-weight: bold;
+	font-size: 1em;
+	background-color: transparent;
+	border: none;
+	background-image: url('../img/menu_input.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	color: white;
+	font-weight: bold;
+	padding-left: 1em;
+	margin-left: 0.5em;
+	margin-top: 1em;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.dialog input[type="text"]::before {
+	background-image: url('../img/menu_input.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	content: '';
+	display: block;
+}
+
+.dialog textarea {
+	width: 100%;
+	height: 128px;
+	background-color: transparent;
+	border: none;
+}
+
+.dialog button {
+	font-family: 'Hapna Slab Serif';
+	background-color: transparent;
+	cursor: pointer;
+	color: black;
+	font-weight: bold;
+	font-size: 1em;
+	text-align: center;
+}
+
+.dialog button[name="submit"] {
+	width: 345px;
+	height: 2.5em;
+	border: none;
+	background-color: transparent;
+	color: white;
+}
+
+.dialog button[name="submit"]::before {
+	background-image: url('../img/menu_button.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	filter: brightness(0.05) sepia(1) saturate(6000%);
+	width: 100%;
+	height: 100%;
+	content: '';
+	display: block;
+	margin-bottom: -2em;
+	z-index: -1;
+}
+
+.dialog button[name="submit"]:hover::before {
+	filter: brightness(0.5) sepia(1) saturate(10000%);
+	cursor: pointer;
+}
+
+.dialog button[name="submit"],
+.dialog button[name="cancel"],
+.dialog button[name="submit"] span,
+.dialog button[name="cancel"] span {
+	background-color: transparent !important;
+	z-index: 2 !important;
+	font-weight: normal !important;
+	color: white;
+	font-family: 'RDR Lino';
+	text-transform: uppercase;
+	line-height: 1.5em;
+}
+
+.dialog button[name="cancel"] {
+	width: 145px;
+	height: 2.5em;
+	border: none;
+	background-color: transparent;
+	color: white;
+}
+
+.dialog button[name="cancel"]::before {
+	background-image: url('../img/menu_button.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	filter: brightness(0.0) sepia(1) saturate(0%);
+	width: 100%;
+	height: 100%;
+	content: '';
+	display: block;
+	margin-bottom: -2em;
+	z-index: -1;
+}
+
+.dialog button[name="cancel"]:hover,
+.dialog button[name="submit"]:hover {
+	font-family: 'RDR Lino' !important;
+	font-weight: 900 !important;
+	color: black;
+}
+
+.dialog button[name="cancel"]:hover::before {
+	filter: brightness(0.1) sepia(1) saturate(10000%);
+	cursor: pointer;
+	color: black;
+}
+
+.dialog button span {
+	margin-left: -2em;
+	position: absolute;
+}
